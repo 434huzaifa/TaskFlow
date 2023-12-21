@@ -1,10 +1,10 @@
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 const NavbarComponent = () => {
-    return (
-        <Navbar fluid rounded>
-      <Navbar.Brand href="https://flowbite-react.com">
-        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+  return (
+    <Navbar fluid rounded className='my-3 rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800'>
+      <Navbar.Brand href="/">
+        <img src="/taskflow.png" className="mr-3 h-6 sm:h-9" alt="TaskFlow Logo" />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">TaskFlow</span>
       </Navbar.Brand>
       <div className="flex md:order-2">
         <Dropdown
@@ -36,7 +36,7 @@ const NavbarComponent = () => {
         <Navbar.Link href="#">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
-    );
+  );
 };
 
 export default NavbarComponent;
