@@ -1,16 +1,13 @@
-import Banner from "./Banner"
+import { Outlet } from "react-router-dom"
+import FooterComponent from "./Footer"
 import NavbarComponent from "./Navbar"
-import Usedby from "./Usedby"
 
 function App() {
   return (
     <div className="mx-5">
       <NavbarComponent></NavbarComponent>
-      <div className="mx-5">
-      <Banner></Banner>
-      <Usedby />
-      </div>
-      
+      <Outlet></Outlet>
+      <FooterComponent></FooterComponent>
     </div>
   )
 }
