@@ -1,9 +1,10 @@
+import { Card } from "flowbite-react";
 
 const Profile = () => {
     return (
-        <div>
-            
-        </div>
+        <Card className="my-3">
+            <p>Profile</p>
+        </Card>
     );
 };
 
