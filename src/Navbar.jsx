@@ -14,6 +14,8 @@ const NavbarComponent = () => {
           <Link className='font-bold' to="/" >Home</Link>
         </Navbar.Link>
         <Navbar.Link active={location.pathname=="/task"}><Link className='font-bold' to="/task" >Task Dashboard</Link></Navbar.Link>
+        <Navbar.Link active={location.pathname=="/registration"}><Link className='font-bold' to="/registration" >Registration</Link></Navbar.Link>
+        <Navbar.Link active={location.pathname=="/login"}><Link className='font-bold' to="/login" >Login</Link></Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

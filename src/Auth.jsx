@@ -31,13 +31,16 @@ const Auth = ({ children }) => {
       setUser(currentUser);
       if (currentUser && !!currentUser?.email) {
         caxios.post('/jsonwebtoken', { email: currentUser.email}).then(res => {
+          setLoading(false)
           return res
+          
         }).catch(error => console.log(error))
+        setLoading(false)
       } else {
         caxios.post('/logout').then().catch(err => err)
+        setLoading(false)
       }
     });
-    setLoading(false)
     return () => {
       unSubscribe();
     }

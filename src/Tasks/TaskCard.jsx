@@ -3,7 +3,7 @@ import moment from "moment";
 import { Draggable } from "react-beautiful-dnd";
 const TaskCard = ({ x ,index}) => {
     return (
-        <Draggable draggableId={x._id} index={index}>
+        <Draggable draggableId={x.title} index={index}>
             {
                 (provided) => (
                     <div ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps}  >
